@@ -10,6 +10,16 @@ namespace Inheritance_Koenraad.Cons
     {
         static void Main(string[] args)
         {
+            Teacher t = new Teacher("Koenraad", "Pecceu");
+            Student s = new Student("Warre", "Pecceu");
+
+            s.GoToSchool();
+            t.Instruct("Databankbeheer");
+
+            s.SetAge(18);
+            t.SetAge(38);
+
+            Console.WriteLine(s.GetAge());
         }
     }
 }
